@@ -81,10 +81,4 @@ void loop()
       }
     }
   }
-  if(Serial.available()){
-    esp.getESPSerial().write(Serial.read());
-  }
-  if(esp.getESPSerial().available()){
-    Serial.write(esp.getESPSerial().read());
-  }
 }
